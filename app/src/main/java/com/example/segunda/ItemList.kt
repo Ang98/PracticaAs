@@ -49,7 +49,7 @@ class ItemList: AnkoComponent<AdaptadorCarrito>{
 
                         }.lparams{
                             gravity = Gravity.END
-                            //topMargin =
+                            topMargin = dip(5)
                         }
 
                     }
