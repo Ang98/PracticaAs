@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
-    android:padding="5dp"
+    android:layout_margin="5dp"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:orientation="vertical">
         >
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
             android:src="@drawable/vodka"
-            android:scaleType="centerCrop"
-            android:contentDescription="@string/todo" />
+            android:scaleType="centerCrop" />
 
 
         <LinearLayout
@@ -27,27 +26,27 @@
             android:padding="10dp">
 
             <TextView
-                android:id="@+id/txtTitleI"
-                android:layout_width="match_parent"
+                android:id="@+id/txtTitleItem"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                tools:text="Titulo" />
+                android:text="Titulo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
             <TextView
-                android:id="@+id/txtDescI"
-                android:layout_width="match_parent"
+                android:id="@+id/txtDescItem"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                tools:text="Titulo" />
+                android:text="Titulo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
             <TextView
-                android:id="@+id/txtPriceI"
-                android:layout_width="match_parent"
+                android:id="@+id/txtPriceItem"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="Titulo"
                 android:layout_gravity="end"
-                android:textColor="@color/colorAccent"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                tools:text="Titulo" />
+                android:textColor="@color/colorAccent"/>
 
 
         </LinearLayout>

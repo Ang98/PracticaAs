@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-
     android:fitsSystemWindows="true"
     android:orientation="vertical"
     tools:context="com.example.segunda.MainActivity">
@@ -16,21 +15,13 @@
         android:layout_width="match_parent"
         android:layout_height="230dp"
         android:fitsSystemWindows="true"
-        app:layout_anchor="@+id/appBarLayout"
-        app:layout_anchorGravity="center"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
-        <com.google.android.material.appbar.CollapsingToolbarLayout
-            android:layout_width="match_parent"
-            android:layout_height="230dp"
-            android:fitsSystemWindows="true"
-            app:contentScrim="?attr/colorPrimary"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:contentDescription="@string/todo"
                 android:scaleType="centerCrop"
                 android:src="@drawable/tienda" />
 
@@ -43,8 +34,6 @@
 
                 />
 
-        </com.google.android.material.appbar.CollapsingToolbarLayout>
-
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -53,11 +42,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        app:behavior_overlapTop="30dp"
-        >
-
-
-    </androidx.recyclerview.widget.RecyclerView>
-
-
+        app:behavior_overlapTop="100dp"
+        />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -10,9 +10,9 @@ class AdapterLanding(val data : List<ItemLanding>): RecyclerView.Adapter<Adapter
     class Holder (itemView : View): RecyclerView.ViewHolder(itemView){
         fun binView(itemLanding: ItemLanding){
             with(itemLanding){
-                itemView.txtTitleI.text= titulo
-                itemView.txtDescI.text= desc
-                itemView.txtPriceI.text = "$ ${String.format("%.2f",precio)}"
+                itemView.txtTitleItem.text= titulo
+                itemView.txtDescItem.text= desc
+                itemView.txtPriceItem.text = "$ ${String.format("%.2f",precio)}"
             }
         }
     }
