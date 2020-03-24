@@ -13,9 +13,11 @@
         >
 
         <ImageView
+            android:id="@+id/imgItemHeader"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="200dp"
             android:src="@drawable/vodka"
+            android:transitionName="transitionHeader"
             android:scaleType="centerCrop" />
 
 
@@ -29,6 +31,7 @@
                 android:id="@+id/txtTitleItem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:transitionName="transitionTitle"
                 android:text="Titulo"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
@@ -36,6 +39,7 @@
                 android:id="@+id/txtDescItem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:transitionName="transitionDesc"
                 android:text="Titulo"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
@@ -43,6 +47,7 @@
                 android:id="@+id/txtPriceItem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:transitionName="transitionPrecio"
                 android:text="Titulo"
                 android:layout_gravity="end"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
